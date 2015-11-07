@@ -1,6 +1,6 @@
 FROM ubuntu:trusty
 
-ARG ANSIBLE_VERSION=1.9.4.
+ARG ANSIBLE_VERSION=1.9.4
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
     curl \
