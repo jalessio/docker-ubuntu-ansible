@@ -1,6 +1,6 @@
 FROM ubuntu:trusty
 
-ARG ANSIBLE_VERSION=1.9.4
+# ARG ANSIBLE_VERSION=1.9.4
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
     curl \
@@ -12,4 +12,4 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     sudo \
   && rm -rf /var/lib/apt/lists/*
 
-RUN pip install ansible==$ANSIBLE_VERSION
+RUN pip install ansible==1.9.4
